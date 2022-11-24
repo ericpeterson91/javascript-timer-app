@@ -1,7 +1,8 @@
 const btn = document.querySelector('button')
 const h1 = document.querySelector('h1')
-let counter = 10
+let counter = 5
 h1.innerHTML = counter
+let interval;
 
 const beep = () => {
     const audio = new Audio('./beep.mp3')
@@ -21,6 +22,3 @@ const timer = () => {
 btn.addEventListener('click', () => {
    interval = setInterval(timer, 1000)
 })
-
-
-
