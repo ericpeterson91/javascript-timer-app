@@ -6,7 +6,7 @@ let interval;
 
 const beep = () => {
     const audio = new Audio('./beep.mp3')
-    audio.volume = 0.2
+    audio.volume = 1
     audio.play()
 }
 
